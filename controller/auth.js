@@ -72,7 +72,7 @@ const login = async (req, res = response) => {
 
         res.json({
             ok: true,
-            msg: 'Usuario creado',
+            msg: 'Usuario autenticado',
             data: usuarioDB,
             token
         });
@@ -104,6 +104,7 @@ const refreshToken = async (req, res = response) => {
 
     res.json({
         ok: true,
+        msg: 'Usuario autenticado',
         data: usuarioDB,
         token
     });
